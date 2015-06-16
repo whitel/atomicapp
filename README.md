@@ -25,7 +25,7 @@ First of all, clone the github repository: `git clone https://github.com/project
 Simply run
 
 ```
-python setup.py install
+pip install .
 ```
 
 If you want to do some changes to the code, I suggest to do:
@@ -61,11 +61,21 @@ Action `run` performs `install` prior it's own tasks are executed if `APP` is gi
 
 ## Providers
 
-Providers represent various deployment targets. They can be added by placing a `provider_name.py` file implementing interface explained in providers/README.md[Providers] into `providers/` directory.
+Providers represent various deployment targets. They can be added by placing a file called `provider_name.py` in `providers/`. This file needs to implement the interface explained in (providers/README.md). For a detailed description of all providers available see the [Provider description](Providers.asciidoc).
 
 ## Dependencies
 
-As of Version 0.0.1 Atomicapp uses [Python 2.7.5](https://docs.python.org/2/) and [Anymarkup](https://github.com/bkabrda/anymarkup).
+As of Version 0.1.1 Atomicapp uses [Python 2.7.5](https://docs.python.org/2/) and [Anymarkup](https://github.com/bkabrda/anymarkup).
+
+##Communication channels
+
+* IRC: #nulecule (On Freenode)
+* Mailing List: [container-tools@redhat.com](https://www.redhat.com/mailman/listinfo/container-tools)
+
+# The Badges
+
+[![Code Health](https://landscape.io/github/projectatomic/atomicapp/master/landscape.svg?style=flat)](https://landscape.io/github/projectatomic/atomicapp/master)
+[![Build Status](https://travis-ci.org/projectatomic/atomicapp.svg?branch=master)](https://travis-ci.org/projectatomic/atomicapp)
 
 # Copyright
 
